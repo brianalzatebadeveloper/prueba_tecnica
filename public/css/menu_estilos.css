@@ -1,0 +1,419 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* General styles goes here */
+
+
+header {
+  background-color: #a9eee6;
+  min-height: 80px;
+  margin: 0;
+  position: relative;
+  -webkit-transition: all 1000ms ease-in-out;
+  -o-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
+}
+
+.head-content {
+  max-width: 1700px;
+  margin: auto;
+  margin-top: 0px;
+  position: relative;
+}
+
+.logo {
+  font-size: 22px;
+  color: #FFF;
+  text-transform: uppercase;
+  float: left;
+  display: inline-block;
+  margin: 4px 10%;
+  width: 130px;
+  position: absolute;
+  z-index: 1000;
+
+
+
+}
+.logo .svg-logo path {
+  stroke: #F00;
+}
+
+.logo:hover > .svg-logo path {
+  stroke: yellow;
+  transition: all 2s;
+}
+
+.header-navigation nav {
+  float: right;
+  width: 100%;
+  display: block;
+}
+.header-navigation nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+  margin-top: 15px;
+  margin-right: 11%;
+}
+.header-navigation nav ul .current_page_item a {
+  color: green;
+}
+.header-navigation nav ul li {
+  display: inline-block;
+  margin: 0px 10px 0px 15px;
+  margin: auto;
+  padding: .8em;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.header-navigation nav ul li:first-child::after {
+ content: "|";
+ font-size: 1.2em;
+ padding: .5em;
+ position: relative;
+ color: #fff;
+
+}
+
+.header-navigation nav ul li:nth-child(2)::after {
+ content: "|";
+ font-size: 1.2em;
+ padding: .5em;
+ position: relative;
+ color: #fff;
+
+}
+
+.header-navigation nav ul li:nth-child(3)::after {
+ content: "|";
+ font-size: 1.2em;
+ padding: .5em;
+ position: relative;
+ color: #fff;
+
+}
+
+.header-navigation nav ul li:nth-child(4)::after {
+ content: "|";
+ font-size: 1.2em;
+ padding: .5em;
+ position: relative;
+ color: #fff;
+
+}
+
+
+.header-navigation nav ul li a {
+  font-size: .84em;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  padding-bottom: .5em;
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+
+}
+
+.header-navigation nav ul li:hover {
+
+  transition: 0.5s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+.header-navigation nav ul li a:hover {
+  color: #fefaec; /*rgba(234, 255, 255, 0.8)*/
+  transition: color 0.5s;
+  font-weight: 600;
+  border-bottom: 1px solid #fefaec;
+
+}
+
+.header-navigation nav ul li a.activo{
+  color: #fefaec;
+  font-weight: 600;
+  transition: color 0.5s;
+  border-bottom: 1px solid #fefaec;
+
+}
+
+
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  opacity: 1;
+  top: 1px;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #fff;
+  display: block;
+}
+
+.mobile-toggle:hover > span {
+  background-color: #fefaec;
+  transition: 1s;
+}
+
+.close-about-section {
+  display: none;
+  text-align: center;
+  margin: 10px;
+}
+.close-about-section .svg-close {
+  z-index: 1;
+  fill: #fff;
+  height: 50px;
+  width: 40px;
+  cursor: pointer;
+}
+.close-about-section .svg-close:hover {
+  fill: #fefaec;
+  transition: all 1s;
+}
+
+
+
+/*--------------------------------------MEDIA---------------------------------------*/
+@media screen and (max-width: 1350px){
+
+.logo {
+  font-size: 22px;
+  color: #FFF;
+  text-transform: uppercase;
+  float: left;
+  display: inline-block;
+  margin: 5px 5%;
+  width: 130px;
+  position: absolute;
+}
+
+.header-navigation nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+  margin-top: 15px;
+  margin-right: 8%;
+}
+
+
+}
+
+@media screen and (max-width: 1090px){
+
+.logo {
+  font-size: 22px;
+  color: #FFF;
+  text-transform: uppercase;
+  float: left;
+  display: inline-block;
+  margin: 5px 4%;
+  width: 120px;
+  position: absolute;
+}
+
+.header-navigation nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+  margin-top: 15px;
+  margin-right: 10%;
+}
+
+.header-navigation nav ul li a {
+  font-size: 11px;
+}
+
+
+}
+
+@media screen and (max-width: 950px){
+
+.logo {
+  font-size: 22px;
+  color: #FFF;
+  text-transform: uppercase;
+  float: left;
+  display: inline-block;
+  margin: 7px 2%;
+  width: 100px;
+  position: absolute;
+}
+
+.header-navigation nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+  margin-top: 15px;
+  margin-right: 5%;
+}
+
+.mobile-toggle {
+
+  top: 27px;
+
+}
+
+
+}
+
+
+@media only screen and (min-width: 860px) {
+  .header-navigation {
+    display: block !important;
+  }
+
+  .close-about-section {
+    display: none !important;
+  }
+
+
+}
+@media screen and (max-width: 860px) {
+
+  header {
+    min-height: 80px;
+    margin: 0;
+    position: relative;
+  }
+
+  .logo {
+    margin: 8px 2%;
+    width: 90px;
+
+  }
+  .mobile-toggle {
+    display: block;
+    z-index: 100;
+  }
+
+  .header-navigation nav {
+    width: 100%;
+  }
+  .header-navigation nav ul {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 20px 0px 0px;
+    margin-right: 0px;
+    padding-bottom: 1em;
+  }
+  .header-navigation nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+
+  .header-navigation nav ul li:first-child::after {
+   display: none;
+
+  }
+
+  .header-navigation nav ul li:nth-child(2)::after {
+   display: none;
+
+
+  }
+
+  .header-navigation nav ul li:nth-child(3)::after {
+   display: none;
+
+
+  }
+
+  .header-navigation nav ul li:nth-child(4)::after {
+   display: none;
+
+
+  }
+
+  .header-navigation nav ul li a {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .header-navigation nav ul li a:hover{
+    color: #fefaec;
+  }
+
+  .responsive-header {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(169, 238, 230, 0.95) none repeat scroll 0% 0%;
+  }
+
+  .header-navigation-center {
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+}
+
+@media screen and (max-width: 400px){
+
+
+.mobile-toggle {
+
+  top: 27px;
+  right: 2%;
+
+}
+
+}
+
+
+
+@media screen and (max-width: 360px){
+
+
+.mobile-toggle {
+
+  top: 27px;
+
+}
+
+}
